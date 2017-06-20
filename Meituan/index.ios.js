@@ -30,7 +30,7 @@ class Meituan extends Component {
                     </View>
                     {/**** 第一部分右边框 ****/}
                     <View style={styles.Part1_RightV}>
-                        <View style={{flex: 1, flexDirection: 'row', borderBottomWidth: 1, borderColor: '#DDD8CE'}}>
+                        <View style={{flex: 1, flexDirection: 'row', borderBottomWidth: 1, borderColor: '#ddd7cf'}}>
                             <View style={{flex: 1}}>
                                 <Text style={[styles.TitleStr, styles.marginLeft30, {color: 'red', marginTop: 14}]}>
                                     低价超值 </Text>
@@ -186,7 +186,6 @@ class Meituan extends Component {
                             flex: 1,
                             flexDirection: 'column',
                             borderBottomWidth: 1,
-                            borderTopWidth: 1,
                             borderColor: '#DDD8CE'
                         }}>
                             <View style={{
