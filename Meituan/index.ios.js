@@ -30,8 +30,8 @@ class Meituan extends Component {
                     </View>
                     {/**** 第一部分右边框 ****/}
                     <View style={styles.Part1_RightV}>
-                        <View style={{flex: 1, flexDirection: 'row'}}>
-                            <View style={{flex: 1, borderBottomWidth: 0.5, borderColor: '#DDD8CE'}}>
+                        <View style={{flex: 1, flexDirection: 'row',borderBottomWidth: 1, borderColor: '#DDD8CE'}}>
+                            <View style={{flex: 1}}>
                                 <Text style={[styles.TitleStr, styles.marginLeft30, {color: 'red', marginTop: 14}]}>
                                     低价超值 </Text>
                                 <Text style={[styles.CommonStr, styles.marginLeft30, {marginTop: 18}]}> 十元惠生活 </Text>
@@ -49,10 +49,10 @@ class Meituan extends Component {
                             </View>
                         </View>
                         <View style={{flex: 1, flexDirection: 'row'}}>
-                            <View style={{flex: 1, flexDirection: 'column'}}>
+                            <View style={{flex: 1, flexDirection: 'column',borderRightWidth: 1, borderColor: '#DDD8CE'}}>
                                 <View style={{flex: 1}}>
                                     <Text style={[styles.TitleStr, styles.marginLeft5, {
-                                        color: '#F742AB',
+                                        color: '#ea6baf',
                                         marginTop: 14
                                     }]}>
                                         聚餐宴请 </Text>
@@ -62,27 +62,123 @@ class Meituan extends Component {
                                 <View style={{flex: 1}}>
                                     <Image
                                         style={{
-                                            width: 40,
-                                            height: 40,
+                                            width: 35,
+                                            height: 35,
                                             resizeMode: Image.resizeMode.cover,
                                             alignSelf: 'center',
                                             marginLeft: -30,
+                                            marginTop:5
                                         }}
                                         source={{uri: 'http://p1.meituan.net/mmc/08615b8ae15d03c44cc5eb9bda381cb212714.png'}}>
                                     </Image>
                                 </View>
                             </View>
                             <View style={{flex: 1}}>
-                                <Text style={styles.CommonStr}>
-                                    5
-                                </Text>
+                                <Text style={[styles.TitleStr, styles.marginLeft5, {
+                                    color:'#fdb36f', marginTop:8
+                                }]}>
+                                    名店抢购 </Text>
+                                <Text style={[styles.CommonStr, styles.marginLeft5,{marginTop:5}]}>
+                                    还有 </Text>
+                                <Text style={[styles.CommonStr, styles.marginLeft5,{marginTop:5}]}>
+                                    12:06:12分 </Text>
                             </View>
                         </View>
                     </View>
                 </View>
                 <View style={styles.Part2_V}>
-
-                </View>
+                    <View style={{flex:1,borderBottomWidth:1,borderTopWidth:1, borderColor:'#DDD8CE', marginTop:20,height:65,flexDirection: 'row',paddingTop:10}}>
+                            <View style={[{flex:1}]}>
+                                <Text style={[styles.marginLeft10, {color: '#f8886d',marginTop: 5,fontSize:17, fontWeight:'800'}]}>
+                                    一元吃大餐 </Text>
+                                <Text style={[styles.CommonStr, styles.marginLeft10]}> 新用户专享 </Text>
+                            </View>
+                            <View style={{flex:1}}>
+                                <Image
+                                    style={[styles.marginLeft10, {
+                                        width: 120,
+                                        height: 50,
+                                        resizeMode: Image.resizeMode.cover
+                                    }]}
+                                    source={{uri: 'http://p1.meituan.net/280.0/groupop/7f8208b653aa51d2175848168c28aa0b23269.jpg'}}>
+                                </Image>
+                            </View>
+                        </View>
+                    <View style={{flex:3,flexDirection: 'row'}}>
+                        <View style={{flex:1,flexDirection:'column',borderBottomWidth:1,borderTopWidth:1, borderColor:'#DDD8CE',borderRightWidth:1}}>
+                            <View style={{flex:1,flexDirection:'row',justifyContent: 'center',alignItems: 'center'}}>
+                                <View style={{flex:1}}>
+                                    <Text style={[styles.marginLeft10, {color: '#e37161',marginTop: 5,fontSize:17, fontWeight:'800'}]}>
+                                        撸串节狂欢 </Text>
+                                    <Text style={[styles.CommonStr, styles.marginLeft10,{color:'#c5c5c7'}]}> 烧烤6.6元起 </Text>
+                                </View>
+                                <View style={{flex:1}}>
+                                    <Image
+                                        style={[styles.marginLeft20, {
+                                            width: 60,
+                                            height: 55,
+                                            resizeMode: Image.resizeMode.cover
+                                        }]}
+                                        source={{uri: 'http://p1.meituan.net/280.0/groupop/fd8484743cbeb9c751a00e07573c3df319183.png'}}>
+                                    </Image>
+                                </View>
+                            </View>
+                            <View style={{flex:1,flexDirection:'row',justifyContent: 'center',alignItems: 'center',borderTopWidth:1, borderColor:'#DDD8CE'}}>
+                                <View style={{flex:1}}>
+                                    <Text style={[styles.marginLeft10, {color: '#81b333',marginTop: 5,fontSize:17, fontWeight:'800'}]}>
+                                        0元餐来袭 </Text>
+                                    <Text style={[styles.CommonStr, styles.marginLeft10,{color:'#c5c5c7'}]}> 免费吃喝玩乐购 </Text>
+                                </View>
+                                <View style={{flex:1}}>
+                                    <Image
+                                        style={[styles.marginLeft20, {
+                                            width: 60,
+                                            height: 55,
+                                            resizeMode: Image.resizeMode.cover
+                                        }]}
+                                        source={{uri: 'http://p0.meituan.net/280.0/groupop/6bf3e31d75559df76d50b2d18630a7c726908.png'}}>
+                                    </Image>
+                                </View>
+                            </View>
+                        </View>
+                        <View style={{flex:1,flexDirection:'column',borderBottomWidth:1,borderTopWidth:1, borderColor:'#DDD8CE'}}>
+                            <View style={{flex:1,flexDirection:'row',justifyContent: 'center',alignItems: 'center',borderColor:'#DDD8CE'}}>
+                                <View style={{flex:1}}>
+                                    <Text style={[styles.marginLeft10, {color: '#f69d42',marginTop: 5,fontSize:17, fontWeight:'800'}]}>
+                                        毕业旅行 </Text>
+                                    <Text style={[styles.CommonStr, styles.marginLeft10,{color:'#c5c5c7'}]}> 选好酒店才安心 </Text>
+                                </View>
+                                <View style={{flex:1}}>
+                                    <Image
+                                        style={[styles.marginLeft20, {
+                                            width: 60,
+                                            height: 55,
+                                            resizeMode: Image.resizeMode.cover
+                                        }]}
+                                        source={{uri: 'http://p0.meituan.net/280.0/groupop/ba4422451254f23e117dedb4c6c865fc10596.jpg'}}>
+                                    </Image>
+                                </View>
+                            </View>
+                            <View style={{flex:1,flexDirection:'row',justifyContent: 'center',alignItems: 'center',borderTopWidth:1, borderColor:'#DDD8CE'}}>
+                                <View style={{flex:1}}>
+                                    <Text style={[styles.marginLeft10, {color: '#6792ea',marginTop: 5,fontSize:17, fontWeight:'800'}]}>
+                                        热门团购 </Text>
+                                    <Text style={[styles.CommonStr, styles.marginLeft10,{color:'#c5c5c7'}]}> 大家都在买什么 </Text>
+                                </View>
+                                <View style={{flex:1}}>
+                                    <Image
+                                        style={[styles.marginLeft20, {
+                                            width: 60,
+                                            height: 55,
+                                            resizeMode: Image.resizeMode.cover
+                                        }]}
+                                        source={{uri: 'http://p1.meituan.net/mmc/a616a48152a895ddb34ca45bd97bbc9d13050.png'}}>
+                                    </Image>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
+                    </View>
                 <View style={styles.Part3_V}>
 
                 </View>
@@ -106,7 +202,7 @@ const styles = StyleSheet.create({
 
     Part2_V: {
         flex: 3,
-        flexDirection: 'row',
+        flexDirection: 'column',
     },
 
     Part3_V: {
@@ -135,7 +231,7 @@ const styles = StyleSheet.create({
         flex: 2,
         paddingTop: 20,
         borderColor: '#DCD7CD',
-        borderLeftWidth: 0.5,
+        borderLeftWidth: 1,
         borderBottomWidth: 1,
         flexDirection: 'column',
     },
@@ -154,6 +250,15 @@ const styles = StyleSheet.create({
 
     marginLeft30: {
         marginLeft: 30,
+    },
+
+    text_box:{
+        borderWidth:1,
+        borderColor:'red'
+    },
+    text_box2:{
+        borderWidth:1,
+        borderColor:'blue'
     },
 });
 
