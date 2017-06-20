@@ -30,24 +30,47 @@ class Meituan extends Component {
                     </View>
                     {/**** 第一部分右边框 ****/}
                     <View style={styles.Part1_RightV}>
-                        <View style={{flex: 1,flexDirection:'row'}}>
-                            <View style={{flex: 1,borderBottomWidth:0.5,borderColor:'#DDD8CE'}}>
-                            <Text style={[styles.TitleStr, styles.marginLeft30, {color: 'red', marginTop: 14}]}>
-                                低价超值 </Text>
-                            <Text style={[styles.CommonStr, styles.marginLeft30,{marginTop: 18}]}> 十元惠生活 </Text>
+                        <View style={{flex: 1, flexDirection: 'row'}}>
+                            <View style={{flex: 1, borderBottomWidth: 0.5, borderColor: '#DDD8CE'}}>
+                                <Text style={[styles.TitleStr, styles.marginLeft30, {color: 'red', marginTop: 14}]}>
+                                    低价超值 </Text>
+                                <Text style={[styles.CommonStr, styles.marginLeft30, {marginTop: 18}]}> 十元惠生活 </Text>
                             </View>
                             <View style={{flex: 1}}>
-                            <Image
-                                style={[styles.marginLeft10, {width: 55, height: 55, marginTop: 14,resizeMode: Image.resizeMode.cover}]}
-                                source={{uri: 'http://p0.meituan.net/mmc/a06d0c5c0a972e784345b2d648b034ec9710.jpg'}}>
-                            </Image>
+                                <Image
+                                    style={[styles.marginLeft10, {
+                                        width: 55,
+                                        height: 55,
+                                        marginTop: 14,
+                                        resizeMode: Image.resizeMode.cover
+                                    }]}
+                                    source={{uri: 'http://p0.meituan.net/mmc/a06d0c5c0a972e784345b2d648b034ec9710.jpg'}}>
+                                </Image>
                             </View>
                         </View>
-                        <View style={{flex: 1,flexDirection:'row'}}>
-                            <View style={{flex: 1}}>
-                                <Text style={styles.CommonStr}>
-                                    4
-                                </Text>
+                        <View style={{flex: 1, flexDirection: 'row'}}>
+                            <View style={{flex: 1, flexDirection: 'column'}}>
+                                <View style={{flex: 1}}>
+                                    <Text style={[styles.TitleStr, styles.marginLeft5, {
+                                        color: '#F742AB',
+                                        marginTop: 14
+                                    }]}>
+                                        聚餐宴请 </Text>
+                                    <Text style={[styles.CommonStr, styles.marginLeft5]}>
+                                        朋友家人常聚聚 </Text>
+                                </View>
+                                <View style={{flex: 1}}>
+                                    <Image
+                                        style={{
+                                            width: 40,
+                                            height: 40,
+                                            resizeMode: Image.resizeMode.cover,
+                                            alignSelf: 'center',
+                                            marginLeft: -30,
+                                        }}
+                                        source={{uri: 'http://p1.meituan.net/mmc/08615b8ae15d03c44cc5eb9bda381cb212714.png'}}>
+                                    </Image>
+                                </View>
                             </View>
                             <View style={{flex: 1}}>
                                 <Text style={styles.CommonStr}>
@@ -117,8 +140,16 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
 
+    marginLeft5: {
+        marginLeft: 5,
+    },
+
     marginLeft10: {
         marginLeft: 10,
+    },
+
+    marginLeft20: {
+        marginLeft: 20,
     },
 
     marginLeft30: {
